@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Input: React.FC = styled(AntdInput)
 `
-    width: 400px;
+    width: 200px;
+    
 `
 ;
 

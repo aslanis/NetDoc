@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import 'antd/dist/antd.css';
 import { Route, Switch } from 'react-router-dom';
 import Storage from '../modules/storage';
+import Profile from '../modules/profile'
 // import { GroupStorage } from '../modules/group-storage/components';
 
 const NetDocContainer = styled.div
@@ -18,11 +19,15 @@ const NetDoc: React.FC = () => {
                 component={Storage}
                 exact />
             {/* 
-            <Route 
+            <Route
                 path="/groupStorage"
                 component={GroupStorage}
             />
             */}
+            <Route
+                path="/profile"
+                component={Profile}
+            />
         </Switch>
     </NetDocContainer>
   );
